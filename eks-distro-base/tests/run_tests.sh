@@ -693,41 +693,14 @@ check_base-golang-compiler() {
     done
 }
 
-check_base-golang-compiler-1.18-base() {
-    check_base-golang-compiler 1.18 base
-}
 
-check_base-golang-compiler-1.18-yum() {
-    check_base-golang-compiler 1.18 yum
-}
 
-check_base-golang-compiler-1.18-gcc() {
-    check_base-golang-compiler 1.18 gcc
-}
 
-check_base-golang-compiler-1.19-base() {
-    check_base-golang-compiler 1.19 base
-}
 
-check_base-golang-compiler-1.19-yum() {
-    check_base-golang-compiler 1.19 yum
-}
 
-check_base-golang-compiler-1.19-gcc() {
-    check_base-golang-compiler 1.19 gcc
-}
 
-check_base-golang-compiler-1.20-base() {
-    check_base-golang-compiler 1.20 base
-}
 
-check_base-golang-compiler-1.20-yum() {
-    check_base-golang-compiler 1.20 yum
-}
 
-check_base-golang-compiler-1.20-gcc() {
-    check_base-golang-compiler 1.20 gcc
-}
 
 
 $TEST

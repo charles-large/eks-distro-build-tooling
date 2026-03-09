@@ -126,7 +126,7 @@ func updateDeprecatedVersionsProjectReadme(fc *string, r *Release) string {
 
 	*fc = strings.Replace(*fc, dlO, dlN, 1)
 
-	dnO := "**Due to the increased security risk this poses, it is HIGHLY recommended that users of `EKS-GO v1.15 - v1.17` update to a supported version of EKS-Go (v1.18+) as soon as possible.**"
+	dnO := "**Due to the increased security risk this poses, it is HIGHLY recommended that users of `EKS-GO v1.15 - v1.24` update to a supported version of EKS-Go (v1.25+) as soon as possible.**"
 	dnN := fmt.Sprintf("**Due to the increased security risk this poses, it is HIGHLY recommended that users of `EKS-GO v1.15 - v%s` update to a supported version of EKS-Go (v%s+) as soon as possible.**", dv, lsv)
 
 	*fc = strings.Replace(*fc, dnO, dnN, 1)
