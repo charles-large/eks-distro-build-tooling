@@ -23,7 +23,7 @@ skip_modules = frozenset((
   'dbm.gnu',
   'lib2to3.pgen2.conv',
   'turtle',
-  # added for 3.9 build from source, this module does not seem to be included in the al2 package
+  # not included in the python package
   'ctypes.test.__main__',
 ))
 # pass an error handler so the test fails if there are broken standard library packages

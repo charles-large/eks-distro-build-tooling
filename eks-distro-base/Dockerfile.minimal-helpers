@@ -55,12 +55,7 @@ FROM scratch as validate
 COPY --from=run_validate /tmp/success .
 
 ################## SYMLINKS #####################
-# Instead of building this during the build everytime, this is the dockerfile
-# needed to build it, but it is currently checked into the repo under scripts
-# when we switch to al22 we can remove this
-
-# the al2 version of symlinks does not support the -C chroot option
-# build a static verison so we can use it on al2 too
+# Recipe for the static symlinks binary checked in under linux-amd64 and linux-arm64.
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023 as al23
 
 ENV VERSION=1.7

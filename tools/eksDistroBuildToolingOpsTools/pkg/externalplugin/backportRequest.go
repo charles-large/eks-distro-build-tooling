@@ -49,7 +49,7 @@ func (s *Server) handleBackportRequest(l *logrus.Entry, requestor string, commen
 		}
 	}
 
-	// Handle "/backport:<project> [versions] - ie /backport:golang 1.18.12 ...
+	// Handle "/backport:<project> [versions] - ie /backport:golang 1.26.11 ...
 	switch project {
 	case "golang":
 	case "go":

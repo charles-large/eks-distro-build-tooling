@@ -25,7 +25,7 @@ Argument parsing is primitive and positional.  The ordering follows:
     * this is the name of the dependency as it shows in the go-license.csv file
 2. project directory
     * directory must contain a GIT_TAG file with the root module version
-3. go lang version, ex: go1.15.6
+3. go lang version, ex: go1.26.11
     * the std go library needs to be included in the ATTRIBUTION.txt.  The license is pulled from upstream based on the passed in version tag
 4. project output directory containing the following directory structure
 

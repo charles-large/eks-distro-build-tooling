@@ -46,7 +46,7 @@ COPY scripts/ /usr/bin
 
 # Google's Distroless has an experimental python3 version based on debian
 # The packages below are cross referenced based on the packages
-# included in distroless and the al2 python3 dependency tree
+# included in distroless and the al2023 python3 dependency tree
 # reference: https://github.com/GoogleContainerTools/distroless/blob/main/experimental/python3/BUILD
 
 RUN set -x && \
@@ -69,7 +69,7 @@ RUN set -x && \
         krb5-libs \
         # libkrb5-3 - in krb5-libs
         # libkrb5support0 - in krb5-libs
-        # libmpdec3 - not in al2
+        # libmpdec3 - mpdecimal, installed for python3.11 below
         # libnsl2 - in glibc
         readline \
         libtirpc \
